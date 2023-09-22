@@ -9,7 +9,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+    /* background-image: url('https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80'); */
     background-position: center center;
     background-size: cover;
     transition: 0.4s;
@@ -50,4 +50,24 @@ body::before {
 
 .slide.active {
     opacity: 1;
+}
+
+.arrow {
+    position: fixed;
+    color: #fff;
+    background-color: transparent;
+    padding: 20px;
+    font-size: 30px;
+    border: 2px solid orange;
+    transform: translateY(-50%);
+    top: 50%;
+    cursor: pointer;
+}
+
+.left-arrow {
+    left: calc(15vw - 65px);
+}
+
+.right-arrow {
+    right: calc(15vw - 65px);
 }
