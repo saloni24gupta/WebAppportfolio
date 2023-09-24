@@ -9,7 +9,16 @@ Counter.forEach(counter => {
         // console.log(typeof target, target)
         const c = +counter.innerText
 
-        const increment = target
+        const increment = target / 200
+        // console.log(increment)
+
+        if(c < target) {
+            counter.innerText = `${Math.ceil(c + increment)}`
+            setTimeout(UpdateCounter, 1)
+        }
+        else {
+            counter.innerText = target
+        }
     }
 
     UpdateCounter()
